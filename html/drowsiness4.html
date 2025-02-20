@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Detección de Somnolencia</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    #title {
+      margin-bottom: 10px;
+    }
+    #container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    #video, #processedImage {
+      border: 1px solid #000;
+    }
+    #restartButton {
+      display: none; /* Oculto por defecto */
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #restartButton:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Detección de Somnolencia</h1>
+
+  <!-- Contenedor de video local y la imagen procesada -->
+  <div id="container">
+    <!-- Video local (cámara) -->
+    <video id="video" width="640" height="480" autoplay playsinline></video>
+
+    <!-- Imagen procesada (devuelta por el servidor con OpenCV) -->
+    <img id="processedImage" width="640" height="480" alt="Procesado" />
+  </div>
+
+  <!-- Botón para reiniciar cuando se cierre el WS -->
+  <button id="restartButton">Reiniciar servicio</button>
+
+  <script type="module" src="/javascript/script.js"></script>
+</body>
+</html>
