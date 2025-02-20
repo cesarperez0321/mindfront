@@ -1,0 +1,15 @@
+Realicé la separación de los archivos html, css y js en sus respectivas carpetas.
+
+Estos Archivos están conectados para lograr ver el servicio de Somnolencia de MindFront.
+
+Además de estos archivos, tenemos la función en Google Cloud Run, ahí se encuentra la imagen Docker para hacer funcionar este servicio.
+
+URL del servidor: https://drowsiness-app-938193306981.us-central1.run.app/ws
+
+WebSocket: wss://drowsiness-app-938193306981.us-central1.run.app/ws
+
+Para poder ver funcionando el servicio se puede hacer en la siguiente URL.
+URL: https://prueba1-f90c9.web.app/drowsiness4.html
+
+De igual manera se puede lograr utilizando el comando http-server desde el CMD, este comando se debe ejecutar desde la caprta principal, donde se encuantran las carpetas html, css y javascript.
+
